@@ -18,3 +18,15 @@ def get_weather(city,api_key):
 api_key="f31e45e2bf5ace15855c80badf764d04"
 city=input("Enter your city name: ")
 get_weather(city,api_key)
+while True:
+    ask=input("Do you want to know another weather conditioin of any location?(Y/N): ")
+    if ask.lower()=="y":
+        repeat_city=input("Enter your city name: ")
+        get_weather(repeat_city,api_key)
+    elif ask=="n":
+        print("Thanks for using this weather app....")
+        print("Thank you")
+        print("closing the programm....")
+        break
+    else:
+        print("Invalid input")
