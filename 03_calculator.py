@@ -14,19 +14,19 @@ num2=float(input("Enter second number: "))
 choice=input("What you want to do?\na.Add\nb.Divide\nc.Multyplication\nd.Subtraction\n")
 if choice.lower()=="a":
     print(f"the sum of {num1} and {num2} is {sum(num1,num2)}")
-    with open ("D:\\Documents\\Home project\calculator.history.txt","a") as f:
+    with open ("D:\\Documents\\Programming\\Home project\\history.txt","a") as f:
         f.write(f"{num1}+{num2}={num1+num2}\n")        
 elif choice.lower()=="b":
     print(f"the Division of {num1} by {num2} is {div(num1,num2)}")
-    with open ("D:\\Documents\\Home project\calculator.history.txt","a") as f:
+    with open ("D:\\Documents\\Programming\\Home project\\history.txt","a") as f:
         f.write(f"{num1}/{num2}={num1/num2}\n")        
 elif choice.lower()=="c":
     print(f"the multyplication of {num1} and {num2} is {mul(num1,num2)}")
-    with open ("D:\\Documents\\Home project\calculator.history.txt","a") as f:
+    with open ("D:\\Documents\\Programming\\Home project\\history.txt","a") as f:
         f.write(f"{num1}X{num2}={num1*num2}\n")        
 elif choice.lower()=="d":
      print(f"the Subtrsction of {num1} and {num2} is {sub(num1,num2)}")
-     with open ("D:\\Documents\\Home project\calculator.history.txt","a") as f:
+     with open ("D:\\Documents\\Programming\\Home project\\history.txt","a") as f:
         f.write(f"{num1}-{num2}={num1-num2}\n")        
 else:
     print("Condition not met Succesfully")

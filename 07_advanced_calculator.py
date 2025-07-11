@@ -1,16 +1,16 @@
 def show_history():
-    with open("D:\\Documents\\Home project\\history.txt") as f:
+    with open("D:\\Documents\\Programming\\Home project\\advanced_calculator.txt") as f:
         read=f.read()
         if(read==""):
             print("No history found")
         else:
             print(read)
 def clear_history():
-    with open("D:\\Documents\\Home project\\history.txt","w") as f:
+    with open("D:\\Documents\\Programming\\Home project\\advanced_calculator.txt","w") as f:
         f.write("")
         print("History cleared")
 def save_history(equation,result):
-    with open("D:\\Documents\\Home project\\history.txt","a") as f:
+    with open("D:\\Documents\\Programming\\Home project\\advanced_calculator.txt","a") as f:
         f.write(equation+"="+str(result)+"\n")
 def calculate(user_input):
     parts=user_input.split()
