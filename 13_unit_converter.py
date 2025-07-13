@@ -118,6 +118,7 @@ def main():
         print("Choose from options") 
         
 while True:
+    try:
         start_programme=input("Do you want to start the programme?(Y/N)\n")
         if start_programme.lower()=="y":
             main()
@@ -128,6 +129,8 @@ while True:
         else:
             print("invalid input!")
             print("enter Y or N")
+    except ValueError:
+        print("Choose Y or N")
 
 
     
