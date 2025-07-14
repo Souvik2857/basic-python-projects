@@ -39,7 +39,7 @@ def calculate(user_input):
     print(f"result: {result}")
     save_history(user_input,result)
 def main():
-    print("___WELCOME TO SIMPLE CALCULATOR___")
+    print("___WELCOME TO CALCULATOR___")
     while True:
         user_input=input("Enter your calculation or command (history,clear,exit)\n").lower()
         if user_input.lower()=="history":
