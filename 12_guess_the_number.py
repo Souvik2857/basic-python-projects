@@ -15,7 +15,7 @@ while True: #here true is for infinite loop
         print(f"Congratulations!\nYou Guessed the number {computer}")
         print(f"your total guesses is {guessed}")
         break
-with open("D:\\Documents\\python programing\\projects\\guess_the_number.txt",'r+') as f:
+with open("D:\\Documents\\Programming\\python programing\\basic python projects\\guess_the_number.txt",'r+') as f:
     f.seek(0) #f.seek to get cursor on first on the text
     data=f.read()
     if(data==""):
