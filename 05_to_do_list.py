@@ -1,4 +1,4 @@
-print("Welcome to to list")
+print("Welcome to todo list")
 task=[]
 tasks=int(input("How many tasks you want to add?\n"))
 for i in range(1,tasks+1):
